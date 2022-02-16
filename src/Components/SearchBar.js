@@ -4,7 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 
 const SearchBar = ({ placeholder, data }) => {
   const [item, setItem] = useState([]);
-  const [wordEntered, setWordEntered] = useState([]);
+  const [wordEntered, setWordEntered] = useState("");
 
   //   onchange
   const handleFilter = (e) => {
@@ -24,7 +24,7 @@ const SearchBar = ({ placeholder, data }) => {
   // clear all
   const clearAll = () => {
     setItem([]);
-    setWordEntered('')
+    setWordEntered("");
   };
 
   return (
