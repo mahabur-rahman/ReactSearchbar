@@ -5,12 +5,15 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 // custom scss
 import "./global.scss";
-import SearchComp from "./components/SearchComp";
+import SearchBar from "./Components/SearchBar";
+import jsonData from "./Data.json";
 
 const App = () => {
   return (
     <>
-      <SearchComp />
+      <div className="App">
+        <SearchBar placeholder={"Search..."} data={jsonData} />
+      </div>
     </>
   );
 };
